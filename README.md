@@ -1,4 +1,4 @@
-# SIR-Epidemiological-Model
+# Simple SIR Epidemiological Model
 An epidemiological model for the spread of an infection in a small, closed or about-closed system.
 
 
