@@ -9,11 +9,11 @@ This is a compartmental model for the spread of an infection in a closed or abou
 If we let s, i, and r represent the fraction of the total population in the respective comparments above, then the following differential equations apply to the system:
 
 $$
-\begin{align} 
+\begin{align*} 
 \frac{ds}{dt} &= -\beta si \\
 \frac{di}{dt} &= \beta si - \gamma i \\
 \frac{di}{dt} &= \gamma i \\
-\end{align}
+\end{align*}
 $$
 
 where $t$ is the time variable, 
