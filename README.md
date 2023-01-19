@@ -19,6 +19,8 @@ $$
 where $t$ is the time variable.
 The first of these equations suggests that the rate at which individuals move from comparment S to I (contract the infection) is directly proportional to the populations in these compartments, with a proportionality constant $\beta$. The second, that infected individuals recover at a rate proportional to their number and a constant $\gamma$. The second and third equations dictate that their respective compartments experience growth in populations resulting from the movement of individuals from the previous comparment.
 
+The parameter $\beta$ is calculated as $\frac{1}{n}$, that susceptible persons interact with $1$ individual every $n$ days. If this rate is high, say, one contact every six hours, then $n$ is small, and in this example is $0.25$ or quarter a day i.e. $\frac{1}{0.25} = 4$ contacts a day.
+
 ## Assumptions
 The fraction of individuals joining and/ or leaving the population is 0 or very small. <br/>
 Time is a continuous variable. <br/>
