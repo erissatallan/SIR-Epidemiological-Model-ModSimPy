@@ -30,13 +30,27 @@ def update_model(state, t, system):
     return State(S=s, I=i, R=r)
 
 def simulate(system, update_func):
+    S = TimeSeries()
+    I = TimeSeries()
+    R = TimeSeries()
+    
     state = system.init
+    t_0 = system.t_0
+    S[t_0], I[t_0], R[t_0] = state
     
     for t in linrange(system.t_0, system.t_end):
         state = update_func(state, t, system)
+        S[t+1], I[t+1], R[t+1] = state
         
-    return state
+    return S, I, R
+
+def plot_results(S, I, R):
+    plot(S, '--', label='Susceptible')
+    plot(I, '-', label='Infected')
+    plot(R, ':', label='Resistant')
+    decorate(xlabel='Time (days)', ylabel='Fraction of population')
 
 my_model = model(beta, gamma)
-final_state = simulate(my_model, update_model)
-final_state
+S, I, R = simulate(my_model, update_model)
+
+plot_results(S, I, R)
