@@ -1,4 +1,4 @@
-# SIR-Epidemiological-Model-ModSimPy
+# SIR-Epidemiological-Model
 An epidemiological model for the spread of an infection in a small, closed or about-closed system.
 
 
@@ -21,7 +21,7 @@ The first of these equations suggests that the rate at which individuals move fr
 
 ## Assumptions
 The fraction of individuals joining and/ or leaving the population is 0 or very small. <br/>
-Time is a continuous variable.
-There are no deaths nor births.
-Permanent immunity is developed upon recovery.
+Time is a continuous variable. <br/>
+There are no deaths nor births. <br/>
+Permanent immunity is developed upon recovery. <br/>
 Infected individuals immeditely become infectious.
